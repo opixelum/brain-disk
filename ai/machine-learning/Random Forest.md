@@ -1,0 +1,1 @@
+- Uses multiple [decision trees](obsidian://open?vault=brain-disk&file=brain-disk%2Fai%2Fmachine-learning%2FDecision%20Tree).
