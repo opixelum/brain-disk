@@ -1,11 +1,8 @@
 ## Estimation Methods
 
-
 ### Least Squares
 
-
 ### Maximum Likelihood
-
 
 ## References
 

@@ -41,3 +41,15 @@ $$\text{Variance} (\sigma^2) = \frac{\sum_{i=1}^{N} (x_i - \mu)^2}{N}$$
 - Shows how spread out the data points are from the mean. The lower it is, the closer values tend to be from the mean.
 
 $$\text{Standard Deviation} (\sigma) = \sqrt{\text{Variance}}$$
+
+## References
+
+- [Descriptive statistics](https://en.wikipedia.org/wiki/Descriptive_statistics)
+- [Interquartile range](https://en.wikipedia.org/wiki/Interquartile_range)
+- [Mean](https://en.wikipedia.org/wiki/Mean)
+- [Median](https://en.wikipedia.org/wiki/Median)
+- [Mode](https://en.wikipedia.org/wiki/Mode_(statistics))
+- [Quartile](https://en.wikipedia.org/wiki/Quartile)
+- [Range](https://en.wikipedia.org/wiki/Range_(statistics))
+- [Standard deviation](https://en.wikipedia.org/wiki/Standard_deviation)
+- [Variance](https://en.wikipedia.org/wiki/Variance)
