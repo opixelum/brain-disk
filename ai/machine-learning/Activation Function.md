@@ -11,8 +11,8 @@ x & \text{if } x \geq 0 \\
 \alpha(e^x - 1) & \text{if } x < 0 
 \end{cases}
 $$
-	with parameter $\alpha \in \mathbb{R}_{+}^{*}$.
-	
+  with parameter $\alpha \in \mathbb{R}_{+}^{*}$.
+
 - **Derivative:**
 $$
 \frac{d}{dx} \text{ELU}(x) = \begin{cases} 
@@ -20,7 +20,7 @@ $$
 \alpha e^x & \text{if } x < 0 
 \end{cases}
 $$
-	with parameter $\alpha \in \mathbb{R}_{+}^{*}$.
+  with parameter $\alpha \in \mathbb{R}_{+}^{*}$.
 
 ## Identity (Linear)
 
@@ -55,7 +55,7 @@ $$
 
 ## Logistic (Sigmoid)
 
-- Used as **last activation function for binary classification tasks**, representing the probability of belonging to class 1 or 2.
+- Used as **last activation function for binary classification tasks**, representing the probability of belonging to class 0 or 1.
 - Has **vanishing gradient problem** in deep neural networks.
 
 - **Activation:**
@@ -77,7 +77,7 @@ x & \text{if } x \geq 0 \\
 \alpha x & \text{if } x < 0 
 \end{cases}
 $$
-	with parameter $\alpha \in \mathbb{R}$.
+  with parameter $\alpha \in \mathbb{R}$.
 
 - **Derivative:**
 $$
@@ -86,11 +86,11 @@ $$
 \alpha & \text{if } x < 0 
 \end{cases}
 $$
-	with parameter $\alpha \in \mathbb{R}$.
+  with parameter $\alpha \in \mathbb{R}$.
 
 ## Rectified Linear Unit (ReLU)
 
-- Most used activation function in [[Convolutional Neural Network]];
+- Most used activation function in [[Convolutional Neural Network (CNN)]];
 - Quick to compute and easy to understand and explain;
 - Solves vanishing gradient problem;
 - Dying neurons problem: since it outputs 0 for negative input, it prevent any further learning for that neuron.
@@ -120,7 +120,7 @@ x & \text{if } x > 0 \\
 \alpha(e^x - 1) & \text{if } x \leq 0 
 \end{cases}
 $$
-	with parameter $\lambda = 1.0507$ and $\alpha = 1.67326$.
+  with parameter $\lambda = 1.0507$ and $\alpha = 1.67326$.
 
 - **Derivative:**
 $$
@@ -129,7 +129,7 @@ $$
 \alpha e^x & \text{if } x \leq 0 
 \end{cases}
 $$
-	with parameter $\lambda = 1.0507$ and $\alpha = 1.67326$.
+  with parameter $\lambda = 1.0507$ and $\alpha = 1.67326$.
 
 ## Sigmoid Linear Unit (SiLU)
 
@@ -162,7 +162,7 @@ $$
 
 ## Tanh
 
-- Used in hidden layers of a neural network;
+- Used in hidden layers of a neural network or as last activation function for binary classification tasks where labels are either -1 or 1;
 - Better performances than [[#Logistic (Sigmoid)]];
 - Has the vanishing gradient problem in deep neural networks. [[#Rectified Linear Unit (ReLU)]] solves this issue.
 
@@ -185,12 +185,12 @@ $$
 $$
 \text{Softmax}(x_i) = \frac{e^{x_i}}{\sum_{j=1}^{n} e^{x_j}}
 $$
-	$\forall i = 1\text{, ..., }n$.
-	$n$ is the number of elements in the vector $x$.
+  $\forall i = 1\text{, ..., }n$.
+  $n$ is the number of elements in the vector $x$.
 
 - **Derivative:**
 
-	Since softmax gives a vector as an output, we can't define a gradient to it. The workaround is to take derivatives of the loss function, with respect to the inputs passed to softmax, instead of the outputs passed by softmax. See [references](#references) for more information.
+  Since softmax gives a vector as an output, we can't define a gradient to it. The workaround is to take derivatives of the loss function, with respect to the inputs passed to softmax, instead of the outputs passed by softmax. See [references](#references) for more information.
 
 ## References
 
