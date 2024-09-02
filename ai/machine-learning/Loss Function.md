@@ -40,7 +40,7 @@ $$
 
 - For regression tasks;
 - Better fitting of the data when there are outliers;
-- Slower than [[#Mean Square Error (MSE) (L2)]].
+- Slower than [[#Mean Squared Error (MSE) (L2)]].
 $$
 \text{MSE} = \frac{1}{n}\sum_{i=1}^{n}\lvert y_i-ŷ_i\rvert
 $$
@@ -50,7 +50,7 @@ $$
   - $\forall i = 1 \text{, ..., } n$;
   - $n =$ number of samples in the training dataset.
   
-## Mean Square Error (MSE) (L2)
+## Mean Squared Error (MSE) (L2)
 
 - For regression tasks;
 - Because of the square, it treats all sample with equal importance. That means that **outliers will have a significant impact on the loss**. But if the dataset is clean, consistent with no outliers, it fits faster than [[#Mean Absolute Error (MAE) (L1)]].
@@ -66,7 +66,7 @@ $$
 ##  Huber Loss (Smooth Mean Absolute Error (SMAE))
 
 - For regression tasks;
-- Mix of both [[#Mean Absolute Error (MAE) (L1)]] and [[#Mean Square Error (MSE) (L2)]] (medium sensitivity to outliers but good convergence speed);
+- Mix of both [[#Mean Absolute Error (MAE) (L1)]] and [[#Mean Squared Error (MSE) (L2)]] (medium sensitivity to outliers but good convergence speed);
 - Quadratic component for small errors (like MSE);
 - Linear component for large errors (like MAE).
 $$
