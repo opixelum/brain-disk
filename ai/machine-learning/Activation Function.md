@@ -180,18 +180,29 @@ $$
 
 - Normalizes the output to a **probability distribution over predicted output classes**;
 - Used as the **last activation function** in a neural network for **classification** tasks.
+- When implementing it, be careful of big numbers for the inputs, it can cause an overflow. To solve this issue, use the softmax trick.
 
 - **Activation:**
 $$
 \text{Softmax}(x_i) = \frac{e^{x_i}}{\sum_{j=1}^{n} e^{x_j}}
 $$
   $\forall i = 1\text{, ..., }n$.
-  $n$ is the number of elements in the vector $x$.
+  $n$ is the number of elements in the vector $X$.
 
 - **Derivative:**
 
   Since softmax gives a vector as an output, we can't define a gradient to it. The workaround is to take derivatives of the loss function, with respect to the inputs passed to softmax, instead of the outputs passed by softmax. See [references](#references) for more information.
 
+### Softmax Trick
+
+The trick is to reduce big inputs numbers without affecting the softmax result.
+If the operation is applied in each side of the division, the result will remain the same as a normal softmax.
+$$
+\text{SoftmaxTrick}(X) = \frac{e^{x_i - Max(X)}}{\sum_{j=1}^{n} e^{x_j - Max(X)}}
+$$
+  $\forall i = 1\text{, ..., }n$.
+  $n$ is the number of elements in the vector $X$.
+  $x$ is an element of the vector $X$.
 ## References
 
 1. [Activation function](https://en.wikipedia.org/wiki/Activation_function)
