@@ -1,2 +1,2 @@
 - Transforms strings into vocabulary indices.
-- Often used just before a [[Embedding Layer]].
+- Often used just before a [[Embedding Layers]].

@@ -1,0 +1,4 @@
+- Computes three vectors for each input element:
+	- Query (Q): Represents the current element seeking information
+	- Key (K): Represents the elements that might contain relevant information
+	- Value (V): Contains the actual information of the elements
